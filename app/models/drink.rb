@@ -1,5 +1,6 @@
 class Drink < ActiveRecord::Base
     belongs_to :user
+    has_many :ratings
   
     validates :name, presence: true
     validates :ingredients, presence: true
